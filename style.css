@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#302B2B;
+  color: #FFDE03;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ text-align: center;
+ margin:40px 20px 0 20px;
+}
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h1{
+  color: #FFDE03;
+  font-size: 3em;
+  font-weight: bolder;
+  border-bottom: 3px solid #FFDE03;
+  padding-bottom: 10px; 
+}
+.container .heading h1 span{
+  font-weight: 100;
+}
+.topnav a{
+  text-decoration: none;
+  padding-top: 0;
+  margin-top: 0;
+  padding: 3rem;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.topnav a:hover{
+  background-color:#FFDE03;
+  color:#302B2B;
+  }
+  .topnav a.active{
+    background-color:gold;
+  color:black;  
+  }
+.container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%; 
+}
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+.container .btn{
+  margin:40px 0px 70px 0px;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+.container .btn a{
+  text-decoration: none;
+  color: #FFDE03;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width:769px){ 
+  .container .box{
+  flex-direction: column;
+  }
+.container .box .dream{
+  width: 100%; 
+} 
+}
+@media only screen and (max-width:643px){ 
+ .container .heading{
+  width: 100%;
+}
+hr.bar{
+  border: 10px solid #FFDE03;
+  border-radius: 5px;
+}
+.container .heading h1{
+  font-size: 1em;
+  position: relative;
+  text-align: left;
+}
+.aboutInfo h2{
+  padding-top: 1em;
+}
+.aboutInfo p{
+  padding-top: 1.5em;
+}
+.acountPic img {
+  position: relative;
+  float: right;
+}
